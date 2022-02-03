@@ -1,0 +1,18 @@
+package homes;
+
+import elemento.Elemento;
+import metodos.Metodos;
+
+public class Homepage {
+	Metodos metodos = new Metodos();
+	Elemento el = new Elemento();
+
+	public void encontraProduto() {
+		try {
+            metodos.escrever(el.getPesquisa(), "Livros");
+		} catch (Exception e) {
+			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
+			System.err.println("------------------Causa do erro-----------------" + e.getCause());
+		}
+	}
+}

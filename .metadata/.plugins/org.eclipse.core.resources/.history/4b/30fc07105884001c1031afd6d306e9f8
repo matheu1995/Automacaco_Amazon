@@ -1,0 +1,17 @@
+package elemento;
+
+import org.openqa.selenium.By;
+
+public class Elemento {
+
+	private By pesquisa = By.id("twotabsearchtextbox");
+    private By validaTexto = By.xpath("//*[text()=' O Pequeno Manual Estoico ']");
+
+	public By getPesquisa() {
+		return pesquisa;
+	}
+
+	public By getValidaTexto() {
+		return validaTexto;
+	}
+}

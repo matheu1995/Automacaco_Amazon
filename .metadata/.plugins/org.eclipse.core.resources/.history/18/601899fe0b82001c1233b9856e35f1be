@@ -1,0 +1,17 @@
+#Author: your.matheusosilva@gmail.com
+
+@tag
+Feature: Automatiza site Amazon
+Dado que eu esteje no site da amazon entao escolho um produto e faco a validacao
+
+  Background: Entra no site
+  Given que eu esteje no "https://www.amazon.com.br/"
+  @tag1
+  Scenario: Title of your scenario
+    Then pesquiso por produto
+    And encotro o produto
+    When Valido o produto
+    And tiro uma print do produto
+    Then fecho o navegador
+
+ 

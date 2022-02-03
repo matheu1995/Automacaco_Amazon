@@ -1,0 +1,45 @@
+package test;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import navegadores.Navegadores;
+
+public class Steps {
+	
+	Navegadores navegadores = new Navegadores();
+	@Given("que eu esteje no {string}")
+	public void que_eu_esteje_no(String string) {
+		navegadores.acessaNavegadores(string, "Chrome");
+	}
+
+	@Then("pesquiso por produto")
+	public void pesquiso_por_produto() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("encotro o produto")
+	public void encotro_o_produto() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Valido o produto")
+	public void valido_o_produto() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
+	@When("tiro uma print do produto")
+	public void tiro_uma_print_do_produto() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("fecho o navegador")
+	public void fecho_o_navegador() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+}

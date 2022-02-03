@@ -1,0 +1,34 @@
+package navegadores;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Navegadores {
+
+	WebDriver driver;
+
+	public void acessaNavegadores(String site, String navegadores) {
+		try {
+			if (navegadores.equalsIgnoreCase("Chrome")) {
+				System.setProperty("webdriver.chrome.driver", "");
+				driver = new ChromeDriver();
+			} else if (navegadores.equalsIgnoreCase("Firefox")) {
+				System.setProperty("webdriver.geko.driver", "");
+				driver = new FirefoxDriver();
+			} else if (navegadores.equalsIgnoreCase("Edige")) {
+				System.setProperty("webdriver.edige.driver", "");
+			}
+			driver.get(site);
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
+		} catch (Exception e) {
+			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
+			System.err.println("------------------Causa do erro-----------------" + e.getCause());
+
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="Tets.Automacao" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="executar.Runner" time="10.834">
+    <testsuite name="Automatiza site Amazon" time="10.834">
+      <testcase name="Procura por Mais vendido" classname="Automatiza site Amazon" time="10.834">
+        <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at test.Steps.acho_o_produto(Steps.java:56)&#13;
+	at ✽.acho o produto(file:///C:/Users/mathe/eclipse-workspace/automacaco/Tets.Automacao/src/test/resources/feature/bdd.feature:20)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

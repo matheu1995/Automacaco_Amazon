@@ -1,0 +1,7 @@
+package homes;
+
+import metodos.Metodos;
+
+public class Homepage {
+   Metodos metodos = new Metodos(); 
+}

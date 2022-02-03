@@ -1,0 +1,48 @@
+package homes;
+
+import java.io.IOException;
+
+import elemento.Elemento;
+import metodos.Metodos;
+
+public class Homepage {
+	Metodos metodos = new Metodos();
+	Elemento el = new Elemento();
+
+	public void encontraProduto() {
+		try {
+			metodos.escrever(el.getPesquisa(), "Livros");
+			metodos.submit(el.getPesquisa());
+		} catch (Exception e) {
+			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
+			System.err.println("------------------Causa do erro-----------------" + e.getCause());
+		}
+	}
+
+	public void produtoEncontrado() {
+		try {
+			metodos.lisaDelivros("3");
+			metodos.click(el.getEscolhoProduto());
+		} catch (Exception e) {
+			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
+			System.err.println("------------------Causa do erro-----------------" + e.getCause());
+		}
+	}
+
+	public void produtoValidado() {
+		try {
+			metodos.ValidaTexto("Amazon", el.getTextoValidado());
+		} catch (Exception e) {
+			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
+			System.err.println("------------------Causa do erro-----------------" + e.getCause());
+		}
+	}
+
+	public void fecharNavegador() throws IOException {
+		try {
+		} catch (Exception e) {
+			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
+			System.err.println("------------------Causa do erro-----------------" + e.getCause());
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package elemento;
+
+import org.openqa.selenium.By;
+
+public class Elemento {
+
+	private By pesquisa = By.id("twotabsearchtextbox");
+	private By escolhoProduto = By.id("buy-now-button");
+	
+	public By getPesquisa() {
+		return pesquisa;
+	}
+
+	public By getEscolhoProduto() {
+		return escolhoProduto;
+	}
+}

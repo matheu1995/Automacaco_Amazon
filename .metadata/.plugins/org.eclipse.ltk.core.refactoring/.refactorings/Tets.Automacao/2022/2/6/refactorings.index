@@ -1,0 +1,14 @@
+1643760914370	Encapsulate field 'pesquisa'
+1643771381268	Move 'evidenciafotos.png' to 'evidencia'
+1643772805466	Rename resource 'evidenciafotos.png'
+1643772808257	Move 'evidenciafotos.png.3' to 'evidencia'
+1643772821582	Rename resource 'evidenciafotos.png'
+1643772859965	Delete element
+1643772868690	Delete element
+1643773055691	Encapsulate field 'validaTexto'
+1643827858332	Encapsulate field 'escolhoProduto'
+1643829020109	Encapsulate field 'textoValidado'
+1643847883845	Encapsulate field 'Todosprodutos'
+1643848489737	Encapsulate field 'Maisvendido'
+1643849835017	Encapsulate field 'Constrocao'
+1643891969432	Encapsulate field 'CabodeEntrada'
