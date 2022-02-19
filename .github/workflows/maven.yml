@@ -26,5 +26,5 @@ jobs:
       run:   |
               chmod +x ./google.sh
                           ./google.sh
-    - name: Build with Maven
+    - name: Run Tests
       run: mvn test --file ./Tets.Automacao/pom.xml
