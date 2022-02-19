@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: executar.CucumberRunnerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.158 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.929 sec

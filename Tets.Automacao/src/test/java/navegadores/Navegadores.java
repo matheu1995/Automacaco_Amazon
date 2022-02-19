@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Navegadores {
 
@@ -14,7 +15,14 @@ public class Navegadores {
 		try {
 			if (navegadores.equalsIgnoreCase("Chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");
-				driver = new ChromeDriver();
+
+				ChromeOptions  options = new ChromeOptions();
+				options.addArguments("--no-sandbox");
+				options.addArguments("--disable-dev-shm-usage");
+				options.addArguments("--headless");
+                
+
+				driver = new ChromeDriver(options);
 			} else if (navegadores.equalsIgnoreCase("Firefox")) {
 				System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
 				driver = new FirefoxDriver();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="executar.CucumberRunnerTest" time="30.232" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="executar.CucumberRunnerTest" time="27.071" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.13+8-Ubuntu-0ubuntu1.20.04"/>
@@ -63,6 +63,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Automatiza site Amazon" name="Procura por livros" time="16.153"/>
-  <testcase classname="Automatiza site Amazon" name="Procura por Mais vendido" time="14.079"/>
+  <testcase classname="Automatiza site Amazon" name="Procura por livros" time="13.743"/>
+  <testcase classname="Automatiza site Amazon" name="Procura por Mais vendido" time="13.328"/>
 </testsuite>
