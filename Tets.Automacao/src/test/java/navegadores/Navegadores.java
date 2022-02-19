@@ -13,7 +13,7 @@ public class Navegadores {
 	public void acessaNavegadores(String site, String navegadores) {
 		try {
 			if (navegadores.equalsIgnoreCase("Chrome")) {
-				System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");
 				driver = new ChromeDriver();
 			} else if (navegadores.equalsIgnoreCase("Firefox")) {
 				System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");

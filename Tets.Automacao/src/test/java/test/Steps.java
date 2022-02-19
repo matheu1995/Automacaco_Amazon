@@ -39,12 +39,6 @@ public class Steps {
 		home.fecharNavegador();
 	}
 	
-	
-	
-	/*
-	 * Novo produtos
-	 */
-
 	@Then("pesquiso por produto mais vendindo")
 	public void pesquiso_por_produto_mais_vendindo() {
 		home.produtoMaisVendido();
@@ -57,7 +51,7 @@ public class Steps {
 
 	@When("achar o produto valido ele")
 	public void achar_o_produto_valido_ele() {
-		home.textoValiddo();
+		home.textoValido();
 	}
 
 	@When("fecho site")

@@ -10,28 +10,18 @@ public class Homepage {
 	Elemento el = new Elemento();
 
 	public void encontraProduto() {
-		try {
-			metodos.escrever(el.getPesquisa(), "Livros");
-			metodos.submit(el.getPesquisa());
-		} catch (Exception e) {
-			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
-			System.err.println("------------------Causa do erro-----------------" + e.getCause());
-		}
+		metodos.escrever(el.getPesquisa(), "Livros");
+		metodos.submit(el.getPesquisa());
 	}
 
 	public void produtoEncontrado() {
-		try {
-			metodos.lisaDelivros("5");
-			metodos.click(el.getEscolhoProduto());
-		} catch (Exception e) {
-			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
-			System.err.println("------------------Causa do erro-----------------" + e.getCause());
-		}
+		metodos.listaDelivros("5");
+		metodos.click(el.getEscolhoProduto());
 	}
 
 	public void produtoValidado() {
 		try {
-			metodos.ValidaTexto("Fazer login", el.getTextoValidado());
+			metodos.validaTexto("Fazer login", el.getTextoValidado());
 		} catch (Exception e) {
 			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
 			System.err.println("------------------Causa do erro-----------------" + e.getCause());
@@ -41,7 +31,7 @@ public class Homepage {
 	public void fecharNavegador() throws IOException {
 		try {
 			metodos.screenShot("foto");
-			metodos.fechaNavegador();
+			metodos.fecharNavegador();
 		} catch (Exception e) {
 			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
 			System.err.println("------------------Causa do erro-----------------" + e.getCause());
@@ -59,6 +49,7 @@ public class Homepage {
 			
 		}
 	}
+
 	public void escolhaProdutor() {
 		try {
 			metodos.listaConstrucao("2");
@@ -69,9 +60,10 @@ public class Homepage {
 			
 		}
 	}
-	public void textoValiddo() {
+
+	public void textoValido() {
 		try {
-			metodos.ValidaTexto("Fazer login", el.getTextoValidado());
+			metodos.validaTexto("Fazer login", el.getTextoValidado());
 		} catch (Exception e) {
 			System.err.println("------------------Erro ao digita-----------------" + e.getMessage());
 			System.err.println("------------------Causa do erro-----------------" + e.getCause());				}

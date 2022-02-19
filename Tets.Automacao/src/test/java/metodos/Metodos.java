@@ -16,21 +16,11 @@ import navegadores.Navegadores;
 public class Metodos extends Navegadores {
 
 	public void escrever(By elemento, String texto) {
-		try {
-			driver.findElement(elemento).sendKeys(texto);
-		} catch (Exception e) {
-			System.err.println("------------Erro ao digita-------------" + e.getMessage());
-			System.err.println("------------Causa do erro--------------" + e.getCause());
-		}
+		driver.findElement(elemento).sendKeys(texto);
 	}
 
 	public void submit(By elemento) {
-		try {
-			driver.findElement(elemento).submit();
-		} catch (Exception e) {
-			System.err.println("------------Erro ao digita-------------" + e.getMessage());
-			System.err.println("------------Causa do erro--------------" + e.getCause());
-		}
+		driver.findElement(elemento).submit();
 	}
 
 	public void click(By elemento) {
@@ -52,7 +42,7 @@ public class Metodos extends Navegadores {
 
 	}
 
-	public void ValidaTexto(String texto, By elemento) {
+	public void validaTexto(String texto, By elemento) {
 		try {
 			String textocapturado = driver.findElement(elemento).getText();
 			assertEquals(texto, textocapturado);
@@ -88,7 +78,7 @@ public class Metodos extends Navegadores {
 		}
 	}
 
-	public void lisaDelivros(String livro) {
+	public void listaDelivros(String livro) {
 		try {
 			driver.findElement(
 					By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[" + livro + "]/div/div")).click();
@@ -98,7 +88,7 @@ public class Metodos extends Navegadores {
 		}
 	}
 
-	public void fechaNavegador() {
+	public void fecharNavegador() {
 		try {
 			driver.quit();
 		} catch (Exception e) {
