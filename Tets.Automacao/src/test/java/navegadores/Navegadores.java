@@ -16,6 +16,7 @@ public class Navegadores {
 			if (navegadores.equalsIgnoreCase("Chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");
 
+
 				ChromeOptions  options = new ChromeOptions();
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-dev-shm-usage");
